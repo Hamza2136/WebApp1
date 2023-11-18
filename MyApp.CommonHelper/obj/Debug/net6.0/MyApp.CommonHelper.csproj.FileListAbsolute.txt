@@ -1,0 +1,12 @@
+C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\bin\Debug\net6.0\MyApp.CommonHelper.deps.json
+C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\bin\Debug\net6.0\MyApp.CommonHelper.dll
+C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\bin\Debug\net6.0\MyApp.CommonHelper.pdb
+C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.csproj.AssemblyReference.cache
+C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.AssemblyInfoInputs.cache
+C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.AssemblyInfo.cs
+C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.csproj.CoreCompileInputs.cache
+C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.dll
+C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\refint\MyApp.CommonHelper.dll
+C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.pdb
+C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\ref\MyApp.CommonHelper.dll

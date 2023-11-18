@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {}
+    "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
+    "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
         "projectName": "MyApp.DataAccessLayer",
-        "projectPath": "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj": {
-                "projectPath": "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj"
+              "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj": {
+                "projectPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj"
               }
             }
           }
@@ -96,14 +96,14 @@
         }
       }
     },
-    "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj": {
+    "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj",
+        "projectUniqueName": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj",
         "projectName": "MyApp.Models",
-        "projectPath": "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj",
+        "projectPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj",
         "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.Models\\obj\\",
+        "outputPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -137,6 +137,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.24, )"
+            },
             "Microsoft.AspNetCore.Mvc.ViewFeatures": {
               "target": "Package",
               "version": "[2.2.0, )"

@@ -4672,6 +4672,19 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "MyApp.CommonHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "6.0.23"
+        },
+        "compile": {
+          "bin/placeholder/MyApp.CommonHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyApp.CommonHelper.dll": {}
+        }
+      },
       "MyApp.DataAccessLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -4694,6 +4707,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.24",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0"
         },
         "compile": {
@@ -12603,6 +12617,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "MyApp.CommonHelper/1.0.0": {
+      "type": "project",
+      "path": "../MyApp.CommonHelper/MyApp.CommonHelper.csproj",
+      "msbuildProject": "../MyApp.CommonHelper/MyApp.CommonHelper.csproj"
+    },
     "MyApp.DataAccessLayer/1.0.0": {
       "type": "project",
       "path": "../MyApp.DataAccessLayer/MyApp.DataAccessLayer.csproj",
@@ -12625,6 +12644,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.23",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.24",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16",
+      "MyApp.CommonHelper >= 1.0.0",
       "MyApp.DataAccessLayer >= 1.0.0"
     ]
   },
@@ -12635,11 +12655,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyWebApp\\MyWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\MyWebApp.csproj",
       "projectName": "MyWebApp",
-      "projectPath": "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyWebApp\\MyWebApp.csproj",
+      "projectPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\MyWebApp.csproj",
       "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyWebApp\\obj\\",
+      "outputPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -12661,8 +12681,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\hamza\\Desktop\\Repository\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj"
+            "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj": {
+              "projectPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj"
+            },
+            "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj"
             }
           }
         }

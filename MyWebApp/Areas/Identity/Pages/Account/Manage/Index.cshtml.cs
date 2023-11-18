@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using MyApp.Models;
 
 namespace MyWebApp.Areas.Identity.Pages.Account.Manage
 {
@@ -58,6 +59,11 @@ namespace MyWebApp.Areas.Identity.Pages.Account.Manage
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
+            public string Name { get; set; }
+            public string Address { get; set; }
+            public string State { get; set; }
+            public string City { get; set; }
+            public int PinCode { get; set; }
         }
 
         private async Task LoadAsync(IdentityUser user)
@@ -72,6 +78,7 @@ namespace MyWebApp.Areas.Identity.Pages.Account.Manage
                 PhoneNumber = phoneNumber
             };
         }
+
 
         public async Task<IActionResult> OnGetAsync()
         {
