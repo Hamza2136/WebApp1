@@ -1,0 +1,33 @@
+﻿@model MyApp.Models.Cart;
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="container mt-4">
+    <form method="post">
+        <div class="row">
+            <div class="col-4">
+                <h1>Product Details</h1>
+                <img src="@Model.Product.ImageUrl" alt="Product Image" height="300" width="300" class="rounded" />
+                <input type="hidden" asp-for="ProductId" />
+
+            </div>
+            <div class="col-8 mt-3" style="border: 4px dotted black;">
+                <div class="row">
+                    <label class=" mb-4" asp-for="@Model.Product.Name"><span class="fw-bolder">Product Name: </span> @Model.Product.Name</label>
+                    <label class=" mb-4" asp-for="@Model.Product.Description"><span class="fw-bolder">Product Description: </span> @Model.Product.Description</label>
+                    <label class=" mb-4" asp-for="@Model.Product.Price"><span class="fw-bolder">Product Price: </span> @Model.Product.Price.ToString("0.00 RS")</label>
+                    <label class=" mb-4" asp-for="@Model.Product.Id"><span class="fw-bolder">Product Category: </span> @Model.Product.Category.Name</label>
+                    <div class="form-control">
+                        <label class="fw-bolder" asp-for="Count">Count: </label>
+                        <input asp-for="Count" class="form-control"/>
+                        <span asp-validation-for="Count" class="text-danger"></span>
+                    </div>
+                    <div class="form-control">
+                        <button class="btn btn-dark mb-3" asp-action="Index" asp-controller="Home">Back Home</button>
+                        <button type="submit" class="btn btn-success mb-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
