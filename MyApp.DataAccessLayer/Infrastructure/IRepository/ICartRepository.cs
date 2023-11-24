@@ -10,5 +10,6 @@ namespace MyApp.DataAccessLayer.Infrastructure.IRepository
     public interface ICartRepository : IRepository<Cart>
     {
         public int IncrementCartItem(Cart cart, int count);
+        public int DecrementCartItem(Cart cart, int count);
     }
 }

@@ -33,9 +33,13 @@ namespace MyApp.DataAccessLayer.Infrastructure.Repository
             _dbset.RemoveRange(entity);
         }
 
-        public IEnumerable<T> GetAll(string? IncludeProperties=null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>>? predicate = null, string? IncludeProperties=null)
         {
             IQueryable<T> query = _dbset;
+            if (predicate != null)
+            {
+                query = query.Where(predicate);
+            }
             if (IncludeProperties != null)
             {
                 foreach (var item in IncludeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))

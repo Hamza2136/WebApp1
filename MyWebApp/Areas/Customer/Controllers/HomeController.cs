@@ -53,10 +53,12 @@ namespace MyWebApp.Areas.Customer.Controllers
                 if (cartitem == null)
                 {
                     _unitOfWork.Cart.Add(cart);
+                    TempData["success"] = "Item Successfully Added to Cart";
                 }
                 else
                 {
                     _unitOfWork.Cart.IncrementCartItem(cartitem, cart.Count);
+                    TempData["success"] = "Item Successfully Added to Cart";
                 }
                 _unitOfWork.save();
             }
