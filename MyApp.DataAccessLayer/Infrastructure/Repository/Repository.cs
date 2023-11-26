@@ -28,9 +28,9 @@ namespace MyApp.DataAccessLayer.Infrastructure.Repository
             _dbset.Remove(entity);
         }
 
-        public void DeleteRange(T entity)
+        public void DeleteRange(IEnumerable<T> entities)
         {
-            _dbset.RemoveRange(entity);
+            _dbset.RemoveRange(entities);
         }
 
         public IEnumerable<T> GetAll(Expression<Func<T, bool>>? predicate = null, string? IncludeProperties=null)

@@ -5,7 +5,7 @@ using MyApp.DataAccessLayer.Infrastructure.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using MyApp.CommonHelper;
-using MyApp.Models;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +27,7 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.LoginPath = $"/Identity/Account/Login";
     options.LogoutPath = $"/Identity/Account/Logout";
 });
+builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("PaymentSetting"));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -42,7 +43,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 app.UseAuthentication();;
-
+StripeConfiguration.ApiKey = 
+    builder.Configuration.GetSection("PaymentSetting:SecretKey").Get<string>();
 app.UseAuthorization();
 app.MapRazorPages();
 app.MapControllerRoute(

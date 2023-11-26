@@ -1,92 +1,96 @@
 ﻿@model MyApp.Models.ViewModel.CartVM
-<div class="row">
-    <div class="col-md-7 mb-4">
-        <div class="card mb-4">
-            <div class="card-header py-3">
-                <h5 class="mb-0">Shipping details</h5>
-            </div>
-            <div class="card-body">
-                <form>
-                    <div class="row mb-4">
-                        <div class="col">
-                            <div class="form-outline">
-                                <label class="form-label">Name</label>
-                                <input type="text" asp-for="@Model.OrderHeader.Name" class="form-control" />
+@using Microsoft.Extensions.Options
+@inject IOptions<MyApp.CommonHelper.StripeSettings> Stripe
+<form method="post">
+    <div class="row">
+        <div class="col-md-7 mb-4">
+            <div class="card mb-4">
+                <div class="card-header py-3">
+                    <h5 class="mb-0">Shipping details</h5>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" asp-for="@Model.OrderHeader.Name" class="form-control" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-outline mb-4">
-                            <label class="form-label">Phone</label>
-                            <input type="number" asp-for="@Model.OrderHeader.Phone" class="form-control" />
-                        </div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label">Phone</label>
+                                <input type="number" asp-for="@Model.OrderHeader.Phone" class="form-control" />
+                            </div>
 
 
-                        <div class="form-outline mb-4">
-                            <label class="form-label">Address</label>
-                            <input type="text" asp-for="@Model.OrderHeader.Address" class="form-control" />
-                        </div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label">Address</label>
+                                <input type="text" asp-for="@Model.OrderHeader.Address" class="form-control" />
+                            </div>
 
-                        <div class="form-outline mb-4">
-                            <label class="form-label">State</label>
-                            <input type="text" asp-for="@Model.OrderHeader.State" class="form-control" />
-                        </div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label">State</label>
+                                <input type="text" asp-for="@Model.OrderHeader.State" class="form-control" />
+                            </div>
 
-                        <div class="form-outline mb-4">
-                            <label class="form-label">City</label>
-                            <input type="text" asp-for="@Model.OrderHeader.City" class="form-control" />
-                        </div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label">City</label>
+                                <input type="text" asp-for="@Model.OrderHeader.City" class="form-control" />
+                            </div>
 
-                        <div class="form-outline mb-4">
-                            <label class="form-label">Postal Code</label>
-                            <input type="text" asp-for="@Model.OrderHeader.PostalCode" class="form-control" />
+                            <div class="form-outline mb-4">
+                                <label class="form-label">Postal Code</label>
+                                <input type="text" asp-for="@Model.OrderHeader.PostalCode" class="form-control" />
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-5 mb-4">
-        <div class="card mb-4">
-            <div class="card-header py-3">
-                <h5 class="mb-0">Summary</h5>
-            </div>
-            <div class="card-body">
-                <table class="table table-bordered table-striped table-dark table-hover">
-                    <tr>
-                            <th>Name</th>
-                            <th>Quantity</th>
-                            <th>Price</th>
-                    </tr>
-                    @foreach (var item in Model.ListofCart)
-                    {
+        <div class="col-md-5 mb-4">
+            <div class="card mb-4">
+                <div class="card-header py-3">
+                    <h5 class="mb-0">Summary</h5>
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered table-striped table-dark table-hover">
                         <tr>
-                            <td>
-                                <i>@item.Product.Name</i>
-                            </td>
-                            <td>
-                                @item.Count
-                            </td>
-                            <td>
-                                @(((item.Product.Price) * (item.Count)).ToString("c", new System.Globalization.CultureInfo("ur-PK")))
-                            </td>
+                                <th>Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
                         </tr>
-                    }
-                </table>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <strong>Total Amount</strong>
-                        <sub><p class="mb-0">(Including Tax!)</p></sub>
+                        @foreach (var item in Model.ListofCart)
+                        {
+                            <tr>
+                                <td>
+                                    <i>@item.Product.Name</i>
+                                </td>
+                                <td>
+                                    @item.Count
+                                </td>
+                                <td>
+                                    @(((item.Product.Price) * (item.Count)).ToString("c", new System.Globalization.CultureInfo("ur-PK")))
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Total Amount</strong>
+                            <sub><p class="mb-0">(Including Tax!)</p></sub>
+                        </div>
+                        <div class="align-right">
+                            <strong>
+                                @Model.OrderHeader.OrderTotal.ToString("c", new System.Globalization.CultureInfo("ur-PK"))
+                            </strong>
+                        </div>
                     </div>
-                    <div class="align-right">
-                        <strong>
-                            @Model.OrderHeader.OrderTotal.ToString("c", new System.Globalization.CultureInfo("ur-PK"))
-                        </strong>
+                    <div align="center" class="mt-5">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Make Purchase</button>
                     </div>
-                </div>
-                <div align="center" class="mt-5">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Make Purchase</button>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</form>

@@ -15,6 +15,6 @@ namespace MyApp.DataAccessLayer.Infrastructure.IRepository
         T GetT(Expression<Func<T, bool>> predicate, string? IncludeProperties= null);
         void Add(T entity);
         void Delete(T entity);
-        void DeleteRange(T entity);
+        void DeleteRange(IEnumerable<T> entities);
     }
 }

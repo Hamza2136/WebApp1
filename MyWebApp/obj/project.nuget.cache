@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QJrPMfkbJOB4F38DYBSoB/C9rC7aPwk++MpzR+/IuUFOahkBatfv27rCstTDfvAWbcD2tLwKeAEXNHHpcnq6XQ==",
+  "dgSpecHash": "QXf2ve3EJPhh/dF3Ar68D45mg+GzkatT9PioJEX7joe1t+ctdCLmYRkWtB/bz83ULQKQEEJO6NkD8iRTdDig8g==",
   "success": true,
   "projectFilePath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\MyWebApp.csproj",
   "expectedPackageFiles": [
@@ -187,6 +187,7 @@
     "C:\\Users\\hamza\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.2\\sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512",
+    "C:\\Users\\hamza\\.nuget\\packages\\stripe.net\\43.4.0\\stripe.net.43.4.0.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

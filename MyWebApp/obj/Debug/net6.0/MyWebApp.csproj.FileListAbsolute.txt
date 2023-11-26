@@ -582,3 +582,4 @@ C:\Users\hamza\source\repos\MyWebApp\MyWebApp\obj\Debug\net6.0\MyWebApp.genrunti
 C:\Users\hamza\source\repos\MyWebApp\MyWebApp\obj\Debug\net6.0\ref\MyWebApp.dll
 C:\Users\hamza\source\repos\MyWebApp\MyWebApp\bin\Debug\net6.0\MyApp.CommonHelper.dll
 C:\Users\hamza\source\repos\MyWebApp\MyWebApp\bin\Debug\net6.0\MyApp.CommonHelper.pdb
+C:\Users\hamza\source\repos\MyWebApp\MyWebApp\bin\Debug\net6.0\Stripe.net.dll
