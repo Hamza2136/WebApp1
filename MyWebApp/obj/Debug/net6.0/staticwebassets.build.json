@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/ufnEPa4cNDaEBwm5CJ4Lk5Ddtm89MAXaC4c+U8BRXI=",
+  "Hash": "M3BaKepB6VTwY74dFCsViPy87bDJUDMPuvmXRat2fqc=",
   "Source": "MyWebApp",
   "BasePath": "_content/MyWebApp",
   "Mode": "Default",
@@ -1122,6 +1122,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\wwwroot\\js\\AllOrder.js",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "js/AllOrder.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\AllOrder.js"
+    },
+    {
       "Identity": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\wwwroot\\js\\AllProduct.js",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
@@ -2123,6 +2140,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\wwwroot\\ProductImage\\169e40d2-7ee6-416b-be8b-58051024b1b0-Screenshot 2023-11-21 223320.png",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "ProductImage/169e40d2-7ee6-416b-be8b-58051024b1b0-Screenshot 2023-11-21 223320.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImage\\169e40d2-7ee6-416b-be8b-58051024b1b0-Screenshot 2023-11-21 223320.png"
     },
     {
       "Identity": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\wwwroot\\ProductImage\\1ef18503-3c6b-4b45-b0eb-51bba07c9ead-dotdash_Final_Economic_Growth_2020-01-d9d40bb9bfee48ef96a20288c47daefa.webp",

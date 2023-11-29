@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\MyWebApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\wwwroot\\ProductImage\\169e40d2-7ee6-416b-be8b-58051024b1b0-Screenshot 2023-11-21 223320.png",
+      "PackagePath": "staticwebassets\\ProductImage\\169e40d2-7ee6-416b-be8b-58051024b1b0-Screenshot 2023-11-21 223320.png"
+    },
+    {
       "Id": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\wwwroot\\ProductImage\\1ef18503-3c6b-4b45-b0eb-51bba07c9ead-dotdash_Final_Economic_Growth_2020-01-d9d40bb9bfee48ef96a20288c47daefa.webp",
       "PackagePath": "staticwebassets\\ProductImage\\1ef18503-3c6b-4b45-b0eb-51bba07c9ead-dotdash_Final_Economic_Growth_2020-01-d9d40bb9bfee48ef96a20288c47daefa.webp"
     },
@@ -47,6 +51,10 @@
     {
       "Id": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\wwwroot\\js\\AllOrder.js",
+      "PackagePath": "staticwebassets\\js\\AllOrder.js"
     },
     {
       "Id": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyWebApp\\wwwroot\\js\\AllProduct.js",
