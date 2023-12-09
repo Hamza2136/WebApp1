@@ -1120,6 +1120,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImage\a05b17ad-711e-4da7-b195-1dbd4cefab65-3D-printing-elementary-schools.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImage\b77e50ff-b17a-44ec-836d-c0e768f1bf20-iBUYPOWER-Desktop-PC-Intel-Core-i7.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>MyWebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MyWebApp</BasePath>
+      <RelativePath>ProductImage/b77e50ff-b17a-44ec-836d-c0e768f1bf20-iBUYPOWER-Desktop-PC-Intel-Core-i7.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImage\b77e50ff-b17a-44ec-836d-c0e768f1bf20-iBUYPOWER-Desktop-PC-Intel-Core-i7.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImage\d9a9e030-c51c-4801-866c-65f5b01e0bde-pexels-rodolfo-clix-1036936.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyWebApp</SourceId>

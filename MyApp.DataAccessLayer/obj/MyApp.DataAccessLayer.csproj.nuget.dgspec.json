@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {}
+    "C:\\Users\\PMYLS\\Desktop\\Repository\\WebApp1\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
+    "C:\\Users\\PMYLS\\Desktop\\Repository\\WebApp1\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\PMYLS\\Desktop\\Repository\\WebApp1\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
         "projectName": "MyApp.DataAccessLayer",
-        "projectPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\PMYLS\\Desktop\\Repository\\WebApp1\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\PMYLS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PMYLS\\Desktop\\Repository\\WebApp1\\MyApp.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hamza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PMYLS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj": {
-                "projectPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj"
+              "C:\\Users\\PMYLS\\Desktop\\Repository\\WebApp1\\MyApp.Models\\MyApp.Models.csproj": {
+                "projectPath": "C:\\Users\\PMYLS\\Desktop\\Repository\\WebApp1\\MyApp.Models\\MyApp.Models.csproj"
               }
             }
           }
@@ -92,25 +87,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj": {
+    "C:\\Users\\PMYLS\\Desktop\\Repository\\WebApp1\\MyApp.Models\\MyApp.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj",
+        "projectUniqueName": "C:\\Users\\PMYLS\\Desktop\\Repository\\WebApp1\\MyApp.Models\\MyApp.Models.csproj",
         "projectName": "MyApp.Models",
-        "projectPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.Models\\MyApp.Models.csproj",
-        "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamza\\source\\repos\\MyWebApp\\MyApp.Models\\obj\\",
+        "projectPath": "C:\\Users\\PMYLS\\Desktop\\Repository\\WebApp1\\MyApp.Models\\MyApp.Models.csproj",
+        "packagesPath": "C:\\Users\\PMYLS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PMYLS\\Desktop\\Repository\\WebApp1\\MyApp.Models\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hamza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PMYLS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,7 +109,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -162,7 +152,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

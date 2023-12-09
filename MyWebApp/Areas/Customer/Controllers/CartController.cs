@@ -128,7 +128,7 @@ namespace MyWebApp.Areas.Customer.Controllers
                 _unitofwork.save();
             }
 
-            var domain = "https://localhost:44304/";
+            var domain = "http://localhost:34738/";
             var options = new SessionCreateOptions
             {
                 LineItems = new List<SessionLineItemOptions>(),

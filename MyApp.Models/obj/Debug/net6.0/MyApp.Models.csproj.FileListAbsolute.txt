@@ -22,3 +22,16 @@ C:\Users\hamza\source\repos\MyWebApp\MyApp.Models\obj\Debug\net6.0\MyApp.Models.
 C:\Users\hamza\source\repos\MyWebApp\MyApp.Models\obj\Debug\net6.0\refint\MyApp.Models.dll
 C:\Users\hamza\source\repos\MyWebApp\MyApp.Models\obj\Debug\net6.0\MyApp.Models.pdb
 C:\Users\hamza\source\repos\MyWebApp\MyApp.Models\obj\Debug\net6.0\ref\MyApp.Models.dll
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\bin\Debug\net6.0\MyApp.Models.deps.json
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\bin\Debug\net6.0\MyApp.Models.dll
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\bin\Debug\net6.0\MyApp.Models.pdb
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\obj\Debug\net6.0\MyApp.Models.csproj.AssemblyReference.cache
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\obj\Debug\net6.0\MyApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\obj\Debug\net6.0\MyApp.Models.AssemblyInfoInputs.cache
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\obj\Debug\net6.0\MyApp.Models.AssemblyInfo.cs
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\obj\Debug\net6.0\MyApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\obj\Debug\net6.0\MyApp.Models.sourcelink.json
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\obj\Debug\net6.0\MyApp.Models.dll
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\obj\Debug\net6.0\refint\MyApp.Models.dll
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\obj\Debug\net6.0\MyApp.Models.pdb
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.Models\obj\Debug\net6.0\ref\MyApp.Models.dll

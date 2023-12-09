@@ -53,19 +53,21 @@
                                 @Model.OrderHeader.OrderTotal.ToString("c", new System.Globalization.CultureInfo("ur-PK"))
                             </strong>
                         </div>
-                        <div>
-                            <a type="button" asp-action="Summary" asp-controller="Cart" asp-area="Customer" class="btn btn-warning btn-block btn-lg">Proceed to Pay</a>
-
-                        </div>
+                        @if (Model.OrderHeader.OrderTotal <= 0)
+                        {
+                            <div>
+                                <button disabled asp-action="Summary" asp-controller="Cart" asp-area="Customer" class="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
+                            </div>
+                        }
+                        else
+                        {
+                            <div>
+                                <a type="button" asp-action="Summary" asp-controller="Cart" asp-area="Customer" class="btn btn-warning btn-block btn-lg">Proceed to Pay</a>
+                            </div>
+                        }
+                        
                     </div>
                 </div>
-                
-                @* <div class="card">
-                    <div align="right" class="card-body">
-                        <a type="button" asp-action="Summary" asp-controller="Cart" asp-area="Customer" class="btn btn-warning btn-block btn-lg">Proceed to Pay</a>
-                    </div>
-                </div> *@
-
             </div>
         </div>
     </div>

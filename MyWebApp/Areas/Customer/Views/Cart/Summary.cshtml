@@ -42,7 +42,7 @@
                                 <label class="form-label">Postal Code</label>
                                 <input type="text" asp-for="@Model.OrderHeader.PostalCode" class="form-control" />
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
+                            @* <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button> *@
                         </div>
                     </form>
                 </div>
@@ -86,9 +86,18 @@
                             </strong>
                         </div>
                     </div>
-                    <div align="center" class="mt-5">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">Make Purchase</button>
-                    </div>
+                    @if (Model.OrderHeader.OrderTotal <= 0)
+                    {
+                        <div align="center" class="mt-5">
+                            <button disabled type="submit" class="btn btn-primary btn-lg btn-block">Make Purchase</button>
+                        </div>
+                    }
+                    else
+                    {
+                        <div align="center" class="mt-5">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Make Purchase</button>
+                        </div>
+                    }
                 </div>
             </div>
         </div>

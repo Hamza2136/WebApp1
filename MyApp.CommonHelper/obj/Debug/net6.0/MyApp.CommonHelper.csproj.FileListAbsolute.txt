@@ -10,3 +10,16 @@ C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.C
 C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\refint\MyApp.CommonHelper.dll
 C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.pdb
 C:\Users\hamza\source\repos\MyWebApp\MyApp.CommonHelper\obj\Debug\net6.0\ref\MyApp.CommonHelper.dll
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\bin\Debug\net6.0\MyApp.CommonHelper.deps.json
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\bin\Debug\net6.0\MyApp.CommonHelper.dll
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\bin\Debug\net6.0\MyApp.CommonHelper.pdb
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.csproj.AssemblyReference.cache
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.AssemblyInfoInputs.cache
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.AssemblyInfo.cs
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.csproj.CoreCompileInputs.cache
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.sourcelink.json
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.dll
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\obj\Debug\net6.0\refint\MyApp.CommonHelper.dll
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.pdb
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.CommonHelper\obj\Debug\net6.0\ref\MyApp.CommonHelper.dll
