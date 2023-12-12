@@ -19,6 +19,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using MyApp.CommonHelper;
+using MyApp.DataAccessLayer.Infrastructure.IRepository;
 using MyApp.Models;
 
 namespace MyWebApp.Areas.Identity.Pages.Account
@@ -32,6 +33,7 @@ namespace MyWebApp.Areas.Identity.Pages.Account
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IUnitOfWork _unitofwork;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
@@ -39,7 +41,8 @@ namespace MyWebApp.Areas.Identity.Pages.Account
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender,
-            RoleManager<IdentityRole> roleManager)
+            RoleManager<IdentityRole> roleManager,
+            IUnitOfWork unitofwork)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -48,6 +51,7 @@ namespace MyWebApp.Areas.Identity.Pages.Account
             _logger = logger;
             _emailSender = emailSender;
             _roleManager = roleManager;
+            _unitofwork = unitofwork;
         }
 
         /// <summary>
@@ -120,6 +124,18 @@ namespace MyWebApp.Areas.Identity.Pages.Account
                 _roleManager.CreateAsync(new IdentityRole(WebsiteRoles.Role_Admin)).GetAwaiter().GetResult();
                 _roleManager.CreateAsync(new IdentityRole(WebsiteRoles.Role_User)).GetAwaiter().GetResult();
                 _roleManager.CreateAsync(new IdentityRole(WebsiteRoles.Role_Employee)).GetAwaiter().GetResult();
+            }
+            var users = _unitofwork.ApplicationUser.GetAll();
+            foreach(var user in users)
+            {
+                if(user.Email == "superadmin@abc.com")
+                {
+                    _userManager.AddToRoleAsync(user, WebsiteRoles.Role_Admin).Wait();
+                }
+                else
+                {
+                    _userManager.AddToRoleAsync(user, WebsiteRoles.Role_User).Wait();
+                }
             }
 
 

@@ -1,11 +1,11 @@
-﻿
+﻿@model int
 @{
     ViewData["Title"] = "ordersuccess";
 }
 
 <div class="container mt-3">
     <div class="alert alert-success">
-        Your Order is Successful, and also Your Payment is Successful.
+        Your Order is Successful, and also Your Payment is Successful. Your Order id is @Model.
     </div>
     <div align="center">
     <a class="btn btn-primary" asp-action="index" asp-controller="home" asp-area="customer">Go back Home</a>

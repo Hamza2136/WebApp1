@@ -15,7 +15,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddSingleton<IEmailSender, EmailSender>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Default"), sqlServerOptions=> sqlServerOptions.EnableRetryOnFailure());
 });
 builder.Services.AddRazorPages();
 builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddDefaultTokenProviders()
