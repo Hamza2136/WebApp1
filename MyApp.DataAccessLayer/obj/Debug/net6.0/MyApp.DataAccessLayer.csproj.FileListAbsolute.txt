@@ -50,3 +50,5 @@ C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.DataAccessLayer\obj\Debug\net6.0
 C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.pdb
 C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.genruntimeconfig.cache
 C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.DataAccessLayer\obj\Debug\net6.0\ref\MyApp.DataAccessLayer.dll
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.DataAccessLayer\bin\Debug\net6.0\MyApp.CommonHelper.dll
+C:\Users\PMYLS\Desktop\Repository\WebApp1\MyApp.DataAccessLayer\bin\Debug\net6.0\MyApp.CommonHelper.pdb

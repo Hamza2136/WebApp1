@@ -1,0 +1,250 @@
+﻿@model MyApp.Models.ViewModel.OrderVM
+@using MyApp.CommonHelper
+<form method="post">
+    <input type="hidden" asp-for="OrderHeader.Id" />
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-6">
+                <h2>Pickup Details</h2>
+            
+                <div class="row mb-3">
+                    @if (User.IsInRole(WebsiteRoles.Role_Admin) || User.IsInRole(WebsiteRoles.Role_Employee))
+                    {
+                        <label asp-for="OrderHeader.Name">Name</label>
+                        <input asp-for="OrderHeader.Name" class="form-control" />
+                        <span asp-validation-for="OrderHeader.Name" class="text-danger"></span>
+                    }
+                    else
+                    {
+                        <label asp-for="OrderHeader.Name">Name</label>
+                        <input readonly asp-for="OrderHeader.Name" class="form-control" />
+                    }
+                </div>
+                <div class="row mb-3">
+                    @if (User.IsInRole(WebsiteRoles.Role_Admin) || User.IsInRole(WebsiteRoles.Role_Employee))
+                    {
+                        <label asp-for="OrderHeader.Phone">Phone</label>
+                        <input asp-for="OrderHeader.Phone" class="form-control" />
+                        <span asp-validation-for="OrderHeader.Phone" class="text-danger"></span>
+                    }
+                    else
+                    {
+                        <label asp-for="OrderHeader.Phone">Phone</label>
+                        <input readonly asp-for="OrderHeader.Phone" class="form-control" />
+                    }
+                </div>
+                <div class="row mb-3">
+                    @if (User.IsInRole(WebsiteRoles.Role_Admin) || User.IsInRole(WebsiteRoles.Role_Employee))
+                    {
+                        <label asp-for="OrderHeader.Address">Address</label>
+                        <input asp-for="OrderHeader.Address" class="form-control" />
+                        <span asp-validation-for="OrderHeader.Address" class="text-danger"></span>
+                    }
+                    else
+                    {
+                        <label asp-for="OrderHeader.Address">Address</label>
+                        <input readonly asp-for="OrderHeader.Address" class="form-control" />
+                    }
+                </div>
+                <div class="row mb-3">
+                    @if (User.IsInRole(WebsiteRoles.Role_Admin) || User.IsInRole(WebsiteRoles.Role_Employee))
+                    {
+                        <label asp-for="OrderHeader.City">City</label>
+                        <input asp-for="OrderHeader.City" class="form-control" />
+                        <span asp-validation-for="OrderHeader.City" class="text-danger"></span>
+                    }
+                    else
+                    {
+                        <label asp-for="OrderHeader.City">City</label>
+                        <input readonly asp-for="OrderHeader.City" class="form-control" />
+                    }
+                </div>
+                <div class="row mb-3">
+                    @if (User.IsInRole(WebsiteRoles.Role_Admin) || User.IsInRole(WebsiteRoles.Role_Employee))
+                    {
+                        <label asp-for="OrderHeader.State">State</label>
+                        <input asp-for="OrderHeader.State" class="form-control" />
+                        <span asp-validation-for="OrderHeader.State" class="text-danger"></span>
+                    }
+                    else
+                    {
+                        <label asp-for="OrderHeader.State">State</label>
+                        <input readonly asp-for="OrderHeader.State" class="form-control" />
+                    }
+                </div>
+                <div class="row mb-3">
+                    @if (User.IsInRole(WebsiteRoles.Role_Admin) || User.IsInRole(WebsiteRoles.Role_Employee))
+                    {
+                        <label asp-for="OrderHeader.PostalCode">Postal Code</label>
+                        <input asp-for="OrderHeader.PostalCode" class="form-control" />
+                        <span asp-validation-for="OrderHeader.PostalCode" class="text-danger"></span>
+                    }
+                    else
+                    {
+                        <label asp-for="OrderHeader.PostalCode">Postal Code</label>
+                        <input readonly asp-for="OrderHeader.PostalCode" class="form-control" />
+                    }
+                </div>
+                <div class="row mb-3">
+                    <label asp-for="OrderHeader.ApplicationUser.Email">Email</label>
+                    <input readonly asp-for="OrderHeader.ApplicationUser.Email" class="form-control" />
+                </div>
+                <div class="row mb-3">
+                    <label asp-for="OrderHeader.DateOfOrder">Order Date</label>
+                    <input readonly value="@Model.OrderHeader.DateOfOrder.ToShortDateString()" class="form-control" />
+                </div>
+                <div class="row mb-3">
+                    @if (User.IsInRole(WebsiteRoles.Role_Admin) || User.IsInRole(WebsiteRoles.Role_Employee))
+                    {
+                        <label asp-for="OrderHeader.TrackingNumber">Tracking Number</label>
+                        <input asp-for="OrderHeader.TrackingNumber" class="form-control" />
+                    }
+                    else
+                    {
+                        <label asp-for="OrderHeader.TrackingNumber">Tracking Number</label>
+                        <input readonly asp-for="OrderHeader.TrackingNumber" class="form-control" />
+                    }
+                </div>
+                <div class="row mb-3">
+                    @if (User.IsInRole(WebsiteRoles.Role_Admin) || User.IsInRole(WebsiteRoles.Role_Employee))
+                    {
+                        <label asp-for="OrderHeader.Carrier">Carrier</label>
+                        <input asp-for="OrderHeader.Carrier" class="form-control" />
+                    }
+                    else
+                    {
+                        <label asp-for="OrderHeader.Carrier">Carrier</label>
+                        <input readonly asp-for="OrderHeader.Carrier" class="form-control" />
+                    }
+                 </div>
+                <div class="row mb-3">
+                    <label asp-for="OrderHeader.DateOfShipping">Shipping Date</label>
+                    <input readonly value="@Model.OrderHeader.DateOfShipping.ToShortDateString()" class="form-control" />
+                </div>
+                <div class="row mb-3">
+                    @if (User.IsInRole(WebsiteRoles.Role_Admin) || User.IsInRole(WebsiteRoles.Role_Employee))
+                    {
+                        <label asp-for="OrderHeader.SessionId">Session Id</label>
+                        <input readonly asp-for="OrderHeader.SessionId" class="form-control" />
+
+                        <label asp-for="OrderHeader.PaymentIntentId">Payment Intent Id</label>
+                        <input readonly asp-for="OrderHeader.PaymentIntentId" class="form-control" />
+                    }
+                </div>
+                <div class="row mb-3">
+                    @if (Model.OrderHeader.SessionId!=null)
+                    {
+                        <label asp-for="OrderHeader.DateOfPayment">Payment Date</label>
+                        <input readonly value="@Model.OrderHeader.DateOfPayment.ToShortDateString()" class="form-control" />
+                    }
+                </div>
+                <div class="row mb-3">
+                    <label asp-for="OrderHeader.PaymentStatus">Payment Status</label>
+                    <input readonly asp-for="OrderHeader.PaymentStatus" class="form-control" />
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary form-control">
+                        Update Order
+                    </button>
+                </div>
+            </div>
+            <div class="col-6">
+                <h2>Order Summary</h2>
+                <div class="card-body">
+                    <table class="table table-bordered table-striped table-dark table-hover">
+                        <tr>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total Price</th>
+                        </tr>
+                        @foreach (var item in Model.OrderDetails)
+                        {
+                            <tr>
+                                <td>
+                                    <i>@item.Product.Name</i>
+                                </td>
+                                <td>
+                                    @item.Count
+                                </td>
+                                <td>
+                                    @item.Product.Price
+                                </td>
+                                <td>
+                                    @(((item.Product.Price) * (item.Count)).ToString("c", new System.Globalization.CultureInfo("ur-PK")))
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                    <div>
+                        <strong>Total Amount &nbsp;<span class="text-end">@Model.OrderHeader.OrderTotal.ToString("c", new System.Globalization.CultureInfo("ur-PK"))</span>PKR</strong>
+                    </div>
+                    
+                </div>
+                @if (User.IsInRole(WebsiteRoles.Role_Admin) || User.IsInRole(WebsiteRoles.Role_Employee))
+                {
+                    @if(Model.OrderHeader.OrderStatus == OrderStatus.StatusApproved)
+                    {
+                        <button asp-action="InProcess" type="submit" class="btn btn-info btn-lg btn-block mb-2 form-control">
+                            Start Processing
+                        </button>
+                    }
+                    @if (Model.OrderHeader.OrderStatus == OrderStatus.StatusInProcess)
+                    {
+                        <button asp-action="Shipped" onclick="return ValidateEmpty()" type="submit" class="btn btn-success btn-lg btn-block mb-2 form-control">
+                            Ship Order
+                        </button>
+                    }
+                    @if(Model.OrderHeader.OrderStatus!=OrderStatus.StatusRefund && Model.OrderHeader.OrderStatus != OrderStatus.StatusCancelled)
+                    {
+                        <button asp-action="Cancelled" type="submit" class="btn btn-danger btn-lg btn-block mb-2 form-control">
+                            Cancel Order
+                        </button>
+                    }
+                }
+                else
+                {
+                    @if (User.IsInRole(WebsiteRoles.Role_User) && Model.OrderHeader.OrderStatus == OrderStatus.StatusPending)
+                    {
+                        <button asp-action="paynow" type="submit" class="btn btn-success btn-lg btn-block mt-2 form-control">
+                            Pay Now
+                        </button>
+                    }
+                }
+            </div>
+
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    <script>
+        function ValidateEmpty() {
+            if (document.getElementById("OrderHeader_TrackingNumber").value == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Please Enter the data in Required Fields'
+                });
+                return false;
+            }
+            else {
+                return true;
+            }
+            if (document.getElementById("OrderHeader_Carrier").value == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Please Enter the data in Required Fields'
+                });
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    </script>
+}

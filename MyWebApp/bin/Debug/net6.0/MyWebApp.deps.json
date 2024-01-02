@@ -19,7 +19,7 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16",
           "MyApp.CommonHelper": "1.0.0",
           "MyApp.DataAccessLayer": "1.0.0",
-          "Stripe.net": "43.4.0"
+          "Stripe.net": "39.124.0"
         },
         "runtime": {
           "MyWebApp.dll": {}
@@ -2177,15 +2177,15 @@
           }
         }
       },
-      "Stripe.net/43.4.0": {
+      "Stripe.net/39.124.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
           "System.Configuration.ConfigurationManager": "6.0.0"
         },
         "runtime": {
           "lib/net6.0/Stripe.net.dll": {
-            "assemblyVersion": "43.4.0.0",
-            "fileVersion": "43.4.0.0"
+            "assemblyVersion": "39.124.0.0",
+            "fileVersion": "39.124.0.0"
           }
         }
       },
@@ -3009,6 +3009,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.24",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.24",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.24",
+          "MyApp.CommonHelper": "1.0.0",
           "MyApp.Models": "1.0.0"
         },
         "runtime": {
@@ -4313,12 +4314,12 @@
       "path": "sqlitepclraw.provider.e_sqlite3/2.1.2",
       "hashPath": "sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512"
     },
-    "Stripe.net/43.4.0": {
+    "Stripe.net/39.124.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wimgjCvADOQ2tXmWsw79Z3w3w0yFVXL3QSbISrmR6yonUqjC54DIFnAlB2nhurwyHmFHTUGcrIa+hIwbi8FuIg==",
-      "path": "stripe.net/43.4.0",
-      "hashPath": "stripe.net.43.4.0.nupkg.sha512"
+      "sha512": "sha512-JjXjXpv30OxKi1KzMrmDmjHPhUZnI2X2ZOaMTorN4kGbVLktporPe/GJztgFW08p7nUMDk/s1iuSX26/pmOpNQ==",
+      "path": "stripe.net/39.124.0",
+      "hashPath": "stripe.net.39.124.0.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

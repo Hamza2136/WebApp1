@@ -4,12 +4,16 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-6 text-primary p-4">
+        <div class="col-3 text-primary p-4">
             <h2>List of Orders</h2>
         </div>
-        <div class="col-6 text-primary p-4">
-            <a asp-controller="order" asp-action="index" asp-route-status="pending" class="text-decoration-none">Pending</a>
-            <a asp-controller="order" asp-action="index" asp-route-status="approved" class="text-decoration-none">Approved</a>
+        <div class="col-9 text-primary p-4">
+            <a class="btn ml-2 btn-primary" asp-controller="order" asp-action="index" asp-route-status="pending" class="text-decoration-none">Pending</a>
+            <a class="btn ml-2 btn-primary" asp-controller="order" asp-action="index" asp-route-status="approved" class="text-decoration-none">Approved</a>
+            <a class="btn ml-2 btn-primary" asp-controller="order" asp-action="index" asp-route-status="underprocessing" class="text-decoration-none">Under Processing</a>
+            <a class="btn ml-2 btn-primary" asp-controller="order" asp-action="index" asp-route-status="shipped" class="text-decoration-none">Shipped</a>
+            <a class="btn ml-2 btn-primary" asp-controller="order" asp-action="index" asp-route-status="cancelled" class="text-decoration-none">Cancelled</a>
+            <a class="btn ml-2 btn-primary" asp-controller="order" asp-action="index" asp-route-status="all" class="text-decoration-none">All</a>
         </div>
         
     </div>

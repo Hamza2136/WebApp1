@@ -119,27 +119,6 @@ namespace MyWebApp.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
-            if (!_roleManager.RoleExistsAsync(WebsiteRoles.Role_Admin).GetAwaiter().GetResult())
-            {
-                _roleManager.CreateAsync(new IdentityRole(WebsiteRoles.Role_Admin)).GetAwaiter().GetResult();
-                _roleManager.CreateAsync(new IdentityRole(WebsiteRoles.Role_User)).GetAwaiter().GetResult();
-                _roleManager.CreateAsync(new IdentityRole(WebsiteRoles.Role_Employee)).GetAwaiter().GetResult();
-            }
-            var users = _unitofwork.ApplicationUser.GetAll();
-            foreach(var user in users)
-            {
-                if(user.Email == "superadmin@abc.com")
-                {
-                    _userManager.AddToRoleAsync(user, WebsiteRoles.Role_Admin).Wait();
-                }
-                else
-                {
-                    _userManager.AddToRoleAsync(user, WebsiteRoles.Role_User).Wait();
-                }
-            }
-
-
-
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
@@ -165,7 +144,7 @@ namespace MyWebApp.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-
+                    await _userManager.AddToRoleAsync(user, WebsiteRoles.Role_User);
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));

@@ -3129,7 +3129,7 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Stripe.net/43.4.0": {
+      "Stripe.net/39.124.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
@@ -4711,6 +4711,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.24",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.24",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.24",
+          "MyApp.CommonHelper": "1.0.0",
           "MyApp.Models": "1.0.0"
         },
         "compile": {
@@ -8708,10 +8709,10 @@
         "sqlitepclraw.provider.e_sqlite3.nuspec"
       ]
     },
-    "Stripe.net/43.4.0": {
-      "sha512": "wimgjCvADOQ2tXmWsw79Z3w3w0yFVXL3QSbISrmR6yonUqjC54DIFnAlB2nhurwyHmFHTUGcrIa+hIwbi8FuIg==",
+    "Stripe.net/39.124.0": {
+      "sha512": "JjXjXpv30OxKi1KzMrmDmjHPhUZnI2X2ZOaMTorN4kGbVLktporPe/GJztgFW08p7nUMDk/s1iuSX26/pmOpNQ==",
       "type": "package",
-      "path": "stripe.net/43.4.0",
+      "path": "stripe.net/39.124.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8727,7 +8728,7 @@
         "lib/netcoreapp3.1/Stripe.net.xml",
         "lib/netstandard2.0/Stripe.net.dll",
         "lib/netstandard2.0/Stripe.net.xml",
-        "stripe.net.43.4.0.nupkg.sha512",
+        "stripe.net.39.124.0.nupkg.sha512",
         "stripe.net.nuspec"
       ]
     },
@@ -12686,7 +12687,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16",
       "MyApp.CommonHelper >= 1.0.0",
       "MyApp.DataAccessLayer >= 1.0.0",
-      "Stripe.net >= 43.4.0"
+      "Stripe.net >= 39.124.0"
     ]
   },
   "packageFolders": {
@@ -12775,7 +12776,7 @@
           },
           "Stripe.net": {
             "target": "Package",
-            "version": "[43.4.0, )"
+            "version": "[39.124.0, )"
           }
         },
         "imports": [

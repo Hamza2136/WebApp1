@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using MyApp.CommonHelper;
 using Stripe;
+using MyApp.DataAccessLayer.DbInitalizer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddSingleton<IEmailSender, EmailSender>();
+builder.Services.AddScoped<IDbInitalizer, DbInitalizer>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default"), sqlServerOptions=> sqlServerOptions.EnableRetryOnFailure());
@@ -45,10 +47,19 @@ app.UseRouting();
 app.UseAuthentication();;
 StripeConfiguration.ApiKey = 
     builder.Configuration.GetSection("PaymentSetting:SecretKey").Get<string>();
+
+dataseeding();
 app.UseAuthorization();
 app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
     pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
-
 app.Run();
+void dataseeding()
+{
+    using(var scope = app.Services.CreateScope())
+    {
+        var DbInitalizer = scope.ServiceProvider.GetRequiredService<IDbInitalizer>();
+        DbInitalizer.initalize();
+    }
+}

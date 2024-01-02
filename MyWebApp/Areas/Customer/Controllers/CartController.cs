@@ -115,7 +115,7 @@ namespace MyWebApp.Areas.Customer.Controllers
             }
             _unitofwork.OrderHeader.Add(vm.OrderHeader);
             _unitofwork.save();
-            foreach(var item in vm.ListofCart)
+            foreach (var item in vm.ListofCart)
             {
                 OrderDetails orderDetails = new OrderDetails()
                 {
@@ -132,10 +132,10 @@ namespace MyWebApp.Areas.Customer.Controllers
             var options = new SessionCreateOptions
             {
                 LineItems = new List<SessionLineItemOptions>(),
-            
+
                 Mode = "payment",
-                SuccessUrl = domain+$"customer/cart/ordersuccess?id={vm.OrderHeader.Id}",
-                CancelUrl = domain+$"customer/cart/index",
+                SuccessUrl = domain + $"customer/cart/ordersuccess?id={vm.OrderHeader.Id}",
+                CancelUrl = domain + $"customer/cart/index",
             };
             foreach (var item in vm.ListofCart)
             {
@@ -143,7 +143,7 @@ namespace MyWebApp.Areas.Customer.Controllers
                 {
                     PriceData = new SessionLineItemPriceDataOptions
                     {
-                        UnitAmount = (long)(item.Product.Price*100),
+                        UnitAmount = (long)(item.Product.Price * 100),
                         Currency = "PKR",
                         ProductData = new SessionLineItemPriceDataProductDataOptions
                         {
@@ -157,14 +157,15 @@ namespace MyWebApp.Areas.Customer.Controllers
 
             var service = new SessionService();
             Session session = service.Create(options);
+
             _unitofwork.OrderHeader.PaymentStatus(vm.OrderHeader.Id, session.Id, session.PaymentIntentId);
-            _unitofwork.save(); 
+            _unitofwork.save();
+
+            _unitofwork.Cart.DeleteRange(vm.ListofCart);
+            _unitofwork.save();
 
             Response.Headers.Add("Location", session.Url);
             return new StatusCodeResult(303);
-
-           
-            //return RedirectToAction("Index", "Home");
         }
 
         public IActionResult ordersuccess(int id)

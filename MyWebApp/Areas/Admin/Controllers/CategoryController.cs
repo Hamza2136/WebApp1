@@ -4,10 +4,13 @@ using MyApp.DataAccessLayer;
 using MyApp.DataAccessLayer.Infrastructure.Repository;
 using MyApp.DataAccessLayer.Infrastructure.IRepository;
 using MyApp.Models.ViewModel;
+using Microsoft.AspNetCore.Authorization;
+using MyApp.CommonHelper;
 
 namespace MyWebApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles =WebsiteRoles.Role_Admin)]
     public class CategoryController : Controller
     {
         private IUnitOfWork _unitofwork;
